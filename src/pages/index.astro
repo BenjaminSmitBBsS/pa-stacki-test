@@ -1,30 +1,17 @@
+---
+import '../styles/global.css';
+---
+
 <!DOCTYPE html>
 <html lang="nl" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KaartjeOnline — Digitale Visitekaartjes &amp; Micro-Websites</title>
-  <!-- Laad Inter lettertype en Tailwind CSS -->
+  <!-- Laad Inter lettertype -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    // Configureer Tailwind met Inter en vloeiende standaardinstellingen
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
-          },
-          boxShadow: {
-            'soft': '0 10px 30px -10px rgba(15, 23, 42, 0.08)',
-            'card': '0 4px 20px -2px rgba(15, 23, 42, 0.05)',
-          }
-        }
-      }
-    };
-  </script>
   <style>
     /* Subtiele animaties voor accordeon en statusmeldingen */
     .accordion-content {
@@ -167,7 +154,7 @@
 
           <!-- Rechter Kolom: Interactieve Live Preview + Testregelaars -->
           <div class="lg:col-span-6">
-            <div class="bg-white rounded-3xl border border-slate-200/90 shadow-soft p-5 sm:p-6">
+            <div class="bg-white rounded-3xl border border-slate-200/90 shadow-lg p-5 sm:p-6">
               <div class="flex items-center justify-between gap-2 pb-4 mb-5 border-b border-slate-100">
                 <div>
                   <span class="text-xs font-bold uppercase tracking-wider text-indigo-600">Live Playground</span>
@@ -230,7 +217,7 @@
 
               <!-- Het Digitale Visitekaartje (Mobiele Micro-Website Mockup) -->
               <div class="bg-slate-100/90 rounded-2xl p-4 sm:p-5 border border-slate-200/70">
-                <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-card overflow-hidden border border-slate-200/80">
+                <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-md overflow-hidden border border-slate-200/80">
                   <!-- Banner & Avatar -->
                   <div id="hero-card-banner" class="h-20 relative transition-colors duration-300" style="background-color: #4f46e5;">
                     <div class="absolute top-3 right-3 bg-white/20 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-0.5 rounded-full">
@@ -322,7 +309,7 @@
 
         <!-- 4 Kernvoordelen -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          <div class="p-6 rounded-2xl bg-slate-50/90 border border-slate-200/70 hover:border-indigo-200 hover:shadow-card transition-all">
+          <div class="p-6 rounded-2xl bg-slate-50/90 border border-slate-200/70 hover:border-indigo-200 hover:shadow-md transition-all">
             <div class="w-11 h-11 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center mb-4">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
@@ -334,7 +321,7 @@
             </p>
           </div>
 
-          <div class="p-6 rounded-2xl bg-slate-50/90 border border-slate-200/70 hover:border-indigo-200 hover:shadow-card transition-all">
+          <div class="p-6 rounded-2xl bg-slate-50/90 border border-slate-200/70 hover:border-indigo-200 hover:shadow-md transition-all">
             <div class="w-11 h-11 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-4">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"></path>
@@ -346,7 +333,7 @@
             </p>
           </div>
 
-          <div class="p-6 rounded-2xl bg-slate-50/90 border border-slate-200/70 hover:border-indigo-200 hover:shadow-card transition-all">
+          <div class="p-6 rounded-2xl bg-slate-50/90 border border-slate-200/70 hover:border-indigo-200 hover:shadow-md transition-all">
             <div class="w-11 h-11 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center mb-4">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path>
@@ -358,7 +345,7 @@
             </p>
           </div>
 
-          <div class="p-6 rounded-2xl bg-slate-50/90 border border-slate-200/70 hover:border-indigo-200 hover:shadow-card transition-all">
+          <div class="p-6 rounded-2xl bg-slate-50/90 border border-slate-200/70 hover:border-indigo-200 hover:shadow-md transition-all">
             <div class="w-11 h-11 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center mb-4">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -464,7 +451,7 @@
         </div>
 
         <!-- Klikbare Voorbeeld-Showcase -->
-        <div id="template-showcase" class="bg-white rounded-3xl border border-slate-200/90 shadow-soft p-6 sm:p-8">
+        <div id="template-showcase" class="bg-white rounded-3xl border border-slate-200/90 shadow-lg p-6 sm:p-8">
           <!-- Wordt dynamisch gevuld via JavaScript op basis van geselecteerde template -->
         </div>
       </div>
@@ -503,408 +490,117 @@
         </div>
 
         <!-- 3 Prijspakketten -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-7 items-stretch">
-          <!-- Pakket 1: Basis Digitaal Visitekaartje -->
-          <article class="rounded-3xl bg-slate-50/70 border border-slate-200 p-7 flex flex-col justify-between hover:border-slate-300 transition-all">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+          <div class="rounded-3xl border border-slate-200 bg-slate-50/70 p-6 sm:p-8 flex flex-col justify-between">
             <div>
-              <div class="flex items-center justify-between">
-                <h3 class="text-xl font-bold text-slate-900">Basis Digitaal Visitekaartje</h3>
-                <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-200/80 text-slate-700">Starter</span>
+              <h3 class="text-lg font-bold text-slate-900">Starter</h3>
+              <p class="text-sm text-slate-600 mt-1">Ideaal voor zzp'ers die direct digitaal willen delen.</p>
+              <div class="mt-6">
+                <span class="text-3xl font-extrabold text-slate-900">€9</span>
+                <span class="text-sm text-slate-500"> / maand</span>
               </div>
-              <p class="mt-2 text-sm text-slate-600">
-                Ideaal voor zzp'ers en professionals die direct een strak digitaal kaartje willen delen.
-              </p>
-
-              <div class="mt-6 flex items-baseline gap-1.5">
-                <span id="price-basis" class="text-4xl font-extrabold text-slate-900">&euro;9</span>
-                <span id="period-basis" class="text-sm font-medium text-slate-500">/ maand</span>
-              </div>
-              <p id="subtext-basis" class="text-xs text-slate-500 mt-1">Maandelijks opzegbaar</p>
-
-              <ul class="mt-6 space-y-3 text-sm text-slate-700">
-                <li class="flex items-start gap-2.5">
-                  <svg class="w-5 h-5 text-indigo-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Persoonlijke link (<code class="text-xs bg-slate-200/70 px-1.5 py-0.5 rounded">kaartjeonline.nl/naam</code>)</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <svg class="w-5 h-5 text-indigo-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Directe knoppen voor WhatsApp, bellen &amp; e-mail</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <svg class="w-5 h-5 text-indigo-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-                  <span>1-klik vCard contactdownload &amp; hoge-resolutie QR-code</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <svg class="w-5 h-5 text-indigo-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Tot 6 social- of website-links</span>
-                </li>
+              <ul class="mt-6 space-y-2.5 text-sm text-slate-700">
+                <li>• Persoonlijke link &amp; QR-code</li>
+                <li>• 1-klik vCard opslaan</li>
+                <li>• WhatsApp-, bel- &amp; e-mailknoppen</li>
               </ul>
             </div>
+            <a href="#aanvragen" class="mt-8 inline-flex items-center justify-center px-5 py-3 rounded-xl text-sm font-semibold text-slate-900 bg-white hover:bg-slate-100 border border-slate-200 transition-colors">
+              Kies Starter
+            </a>
+          </div>
 
-            <button
-              type="button"
-              data-select-package="Basis Digitaal Visitekaartje"
-              class="select-package-btn mt-8 w-full py-3 px-4 rounded-xl text-sm font-semibold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 transition-colors"
-            >
-              Kies Basis Visitekaartje
-            </button>
-          </article>
-
-          <!-- Pakket 2: Pro Micro-Website (Uitgelicht) -->
-          <article class="rounded-3xl bg-white border-2 border-indigo-600 shadow-soft p-7 flex flex-col justify-between relative">
-            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-indigo-600 text-white text-xs font-bold px-3.5 py-1 rounded-full shadow-sm">
-              Meest gekozen
-            </div>
-
+          <div class="rounded-3xl border-2 border-indigo-600 bg-white p-6 sm:p-8 shadow-lg flex flex-col justify-between">
             <div>
-              <div class="flex items-center justify-between">
-                <h3 class="text-xl font-bold text-slate-900">Pro Micro-Website</h3>
-                <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-indigo-50 text-indigo-700">Compleet</span>
+              <span class="inline-block text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-indigo-50 text-indigo-700 mb-3">Meest gekozen</span>
+              <h3 class="text-xl font-bold text-slate-900">Pro Micro-Website</h3>
+              <p class="text-sm text-slate-600 mt-1">Voor professionals die portfolio, links &amp; eigen domein willen.</p>
+              <div class="mt-6">
+                <span class="text-3xl font-extrabold text-slate-900">€19</span>
+                <span class="text-sm text-slate-500"> / maand</span>
               </div>
-              <p class="mt-2 text-sm text-slate-600">
-                Een volwaardige, razendsnelle mobiele micro-website met eigen domein, portfolio en leadknoppen.
-              </p>
-
-              <div class="mt-6 flex items-baseline gap-1.5">
-                <span id="price-pro" class="text-4xl font-extrabold text-slate-900">&euro;19</span>
-                <span id="period-pro" class="text-sm font-medium text-slate-500">/ maand</span>
-              </div>
-              <p id="subtext-pro" class="text-xs text-slate-500 mt-1">Maandelijks opzegbaar</p>
-
-              <ul class="mt-6 space-y-3 text-sm text-slate-700">
-                <li class="flex items-start gap-2.5">
-                  <svg class="w-5 h-5 text-indigo-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Alles uit het Basis pakket + eigen thema-kleuren &amp; huisstijl</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <svg class="w-5 h-5 text-indigo-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Koppeling met eigen domeinnaam (bijv. <code class="text-xs bg-slate-100 px-1.5 py-0.5 rounded">jouwnaam.nl</code>)</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <svg class="w-5 h-5 text-indigo-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Diensten-/productblokken, reviews &amp; afspraaklink</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <svg class="w-5 h-5 text-indigo-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Bezoekersstatistieken &amp; NFC-kaart gereed</span>
-                </li>
+              <ul class="mt-6 space-y-2.5 text-sm text-slate-700">
+                <li>• Alles uit Starter</li>
+                <li>• Uitgebreide micro-website &amp; secties</li>
+                <li>• Eigen huisstijlkleuren &amp; NFC-klaar</li>
               </ul>
             </div>
+            <a href="#aanvragen" class="mt-8 inline-flex items-center justify-center px-5 py-3 rounded-xl text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 transition-colors">
+              Kies Pro
+            </a>
+          </div>
 
-            <button
-              type="button"
-              data-select-package="Pro Micro-Website"
-              class="select-package-btn mt-8 w-full py-3.5 px-4 rounded-xl text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 shadow-sm transition-colors"
-            >
-              Kies Pro Micro-Website
-            </button>
-          </article>
-
-          <!-- Pakket 3: Team / Bedrijf -->
-          <article class="rounded-3xl bg-slate-50/70 border border-slate-200 p-7 flex flex-col justify-between hover:border-slate-300 transition-all">
+          <div class="rounded-3xl border border-slate-200 bg-slate-50/70 p-6 sm:p-8 flex flex-col justify-between">
             <div>
-              <div class="flex items-center justify-between">
-                <h3 class="text-xl font-bold text-slate-900">Team / Bedrijf</h3>
-                <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-200/80 text-slate-700">Tot 10 profielen</span>
+              <h3 class="text-lg font-bold text-slate-900">Team</h3>
+              <p class="text-sm text-slate-600 mt-1">Voor teams en studio's met uniforme digitale kaartjes.</p>
+              <div class="mt-6">
+                <span class="text-3xl font-extrabold text-slate-900">€49</span>
+                <span class="text-sm text-slate-500"> / maand</span>
               </div>
-              <p class="mt-2 text-sm text-slate-600">
-                Voor teams, bureaus en vestigingen die een uniforme digitale huisstijl willen uitrollen.
-              </p>
-
-              <div class="mt-6 flex items-baseline gap-1.5">
-                <span id="price-team" class="text-4xl font-extrabold text-slate-900">&euro;49</span>
-                <span id="period-team" class="text-sm font-medium text-slate-500">/ maand</span>
-              </div>
-              <p id="subtext-team" class="text-xs text-slate-500 mt-1">Maandelijks opzegbaar</p>
-
-              <ul class="mt-6 space-y-3 text-sm text-slate-700">
-                <li class="flex items-start gap-2.5">
-                  <svg class="w-5 h-5 text-indigo-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Tot 10 persoonlijke visitekaartjes &amp; micro-profielen</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <svg class="w-5 h-5 text-indigo-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Centrale bedrijfsbranding, logo &amp; huisstijlkleuren</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <svg class="w-5 h-5 text-indigo-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Eigen subdomein of domeinkoppeling voor het team</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <svg class="w-5 h-5 text-indigo-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Prioriteit-ondersteuning &amp; snelle onboarding</span>
-                </li>
+              <ul class="mt-6 space-y-2.5 text-sm text-slate-700">
+                <li>• Tot 10 teamleden</li>
+                <li>• Centrale merkstijl &amp; beheer</li>
+                <li>• Prioriteit bij updates &amp; support</li>
               </ul>
             </div>
-
-            <button
-              type="button"
-              data-select-package="Team / Bedrijf"
-              class="select-package-btn mt-8 w-full py-3 px-4 rounded-xl text-sm font-semibold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 transition-colors"
-            >
-              Kies Team / Bedrijf
-            </button>
-          </article>
+            <a href="#aanvragen" class="mt-8 inline-flex items-center justify-center px-5 py-3 rounded-xl text-sm font-semibold text-slate-900 bg-white hover:bg-slate-100 border border-slate-200 transition-colors">
+              Kies Team
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- 6. INTERACTIEF BESTEL- / AANVRAAGFORMULIER -->
+    <!-- 6. AANVRAGEN / CONTACT -->
     <section id="aanvragen" class="py-16 sm:py-24">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-white rounded-3xl border border-slate-200/90 shadow-soft p-6 sm:p-10">
-          <div class="text-center max-w-2xl mx-auto mb-8">
-            <span class="text-xs font-bold uppercase tracking-wider text-indigo-600">Direct aanvragen</span>
-            <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900">
-              Vraag jouw digitale visitekaartje of micro-website aan
-            </h2>
-            <p class="mt-2 text-sm sm:text-base text-slate-600">
-              Vul je gegevens in en ontvang direct een overzichtelijke bevestiging van je aanvraag.
-            </p>
-          </div>
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-3xl border border-slate-200/90 shadow-lg p-6 sm:p-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-indigo-600">Direct starten</span>
+          <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900">
+            Vraag jouw digitale visitekaartje aan
+          </h2>
+          <p class="mt-2 text-sm sm:text-base text-slate-600">
+            Laat je naam en e-mailadres achter en we helpen je snel op weg.
+          </p>
 
-          <form id="order-form" novalidate class="space-y-6">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-              <!-- Naam -->
-              <div>
-                <label for="order-naam" class="block text-sm font-semibold text-slate-700 mb-1.5">
-                  Volledige naam <span class="text-rose-600">*</span>
-                </label>
-                <input
-                  id="order-naam"
-                  name="naam"
-                  type="text"
-                  required
-                  placeholder="Bijv. Bram de Vries"
-                  class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50/60 focus:bg-white text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
-                />
-                <p id="error-naam" class="hidden mt-1 text-xs font-medium text-rose-600">Vul alsjeblieft je naam in.</p>
-              </div>
-
-              <!-- E-mailadres -->
-              <div>
-                <label for="order-email" class="block text-sm font-semibold text-slate-700 mb-1.5">
-                  E-mailadres <span class="text-rose-600">*</span>
-                </label>
-                <input
-                  id="order-email"
-                  name="email"
-                  type="email"
-                  required
-                  placeholder="bram@voorbeeld.nl"
-                  class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50/60 focus:bg-white text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
-                />
-                <p id="error-email" class="hidden mt-1 text-xs font-medium text-rose-600">Vul een geldig e-mailadres in.</p>
-              </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-              <!-- Gekozen pakket -->
-              <div>
-                <label for="order-pakket" class="block text-sm font-semibold text-slate-700 mb-1.5">
-                  Gekozen pakket
-                </label>
-                <select
-                  id="order-pakket"
-                  name="pakket"
-                  class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50/60 focus:bg-white text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
-                >
-                  <option value="Basis Digitaal Visitekaartje">Basis Digitaal Visitekaartje</option>
-                  <option value="Pro Micro-Website" selected>Pro Micro-Website</option>
-                  <option value="Team / Bedrijf">Team / Bedrijf</option>
-                </select>
-              </div>
-
-              <!-- Gewenste domeinnaam of link -->
-              <div>
-                <label for="order-domein" class="block text-sm font-semibold text-slate-700 mb-1.5">
-                  Gewenste domeinnaam of link <span class="text-rose-600">*</span>
-                </label>
-                <input
-                  id="order-domein"
-                  name="domein"
-                  type="text"
-                  required
-                  placeholder="bijv. bramdevries.nl of kaartjeonline.nl/bram"
-                  class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50/60 focus:bg-white text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
-                />
-                <p id="error-domein" class="hidden mt-1 text-xs font-medium text-rose-600">Geef een gewenste link of domeinnaam op.</p>
-              </div>
-            </div>
-
-            <!-- Gewenste functies -->
+          <form class="mt-6 space-y-4">
             <div>
-              <span class="block text-sm font-semibold text-slate-700 mb-2.5">Gewenste functies</span>
-              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-                <label class="flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100/80 cursor-pointer transition-colors">
-                  <input type="checkbox" name="functies" value="QR-code & NFC" checked class="w-4 h-4 rounded text-indigo-600 focus:ring-indigo-500 border-slate-300" />
-                  <span class="text-sm font-medium text-slate-700">QR-code &amp; NFC</span>
-                </label>
-
-                <label class="flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100/80 cursor-pointer transition-colors">
-                  <input type="checkbox" name="functies" value="WhatsApp & Direct bellen" checked class="w-4 h-4 rounded text-indigo-600 focus:ring-indigo-500 border-slate-300" />
-                  <span class="text-sm font-medium text-slate-700">WhatsApp &amp; Bellen</span>
-                </label>
-
-                <label class="flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100/80 cursor-pointer transition-colors">
-                  <input type="checkbox" name="functies" value="1-klik vCard opslaan" checked class="w-4 h-4 rounded text-indigo-600 focus:ring-indigo-500 border-slate-300" />
-                  <span class="text-sm font-medium text-slate-700">1-klik vCard opslaan</span>
-                </label>
-
-                <label class="flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100/80 cursor-pointer transition-colors">
-                  <input type="checkbox" name="functies" value="Portfolio / Dienstenblokken" class="w-4 h-4 rounded text-indigo-600 focus:ring-indigo-500 border-slate-300" />
-                  <span class="text-sm font-medium text-slate-700">Portfolio &amp; Diensten</span>
-                </label>
-
-                <label class="flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100/80 cursor-pointer transition-colors">
-                  <input type="checkbox" name="functies" value="Afspraak- of reserveringslink" class="w-4 h-4 rounded text-indigo-600 focus:ring-indigo-500 border-slate-300" />
-                  <span class="text-sm font-medium text-slate-700">Afspraak / Reserveren</span>
-                </label>
-
-                <label class="flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100/80 cursor-pointer transition-colors">
-                  <input type="checkbox" name="functies" value="Eigen domeinkoppeling" class="w-4 h-4 rounded text-indigo-600 focus:ring-indigo-500 border-slate-300" />
-                  <span class="text-sm font-medium text-slate-700">Eigen domeinnaam</span>
-                </label>
-              </div>
+              <label for="aanvraag-naam" class="block text-xs font-semibold text-slate-700 mb-1">Naam</label>
+              <input id="aanvraag-naam" type="text" required placeholder="Jouw naam" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500" />
             </div>
-
-            <!-- Optionele toelichting -->
             <div>
-              <label for="order-opmerking" class="block text-sm font-semibold text-slate-700 mb-1.5">
-                Aanvullende wensen (optioneel)
-              </label>
-              <textarea
-                id="order-opmerking"
-                name="opmerking"
-                rows="3"
-                placeholder="Vertel kort iets over je branche, gewenste stijl of links die je wilt toevoegen..."
-                class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-slate-50/60 focus:bg-white text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
-              ></textarea>
+              <label for="aanvraag-email" class="block text-xs font-semibold text-slate-700 mb-1">E-mailadres</label>
+              <input id="aanvraag-email" type="email" required placeholder="naam@bedrijf.nl" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500" />
             </div>
-
-            <div class="pt-2">
-              <button
-                type="submit"
-                class="w-full py-4 px-6 rounded-xl text-base font-semibold text-white bg-indigo-600 hover:bg-indigo-700 shadow-md shadow-indigo-600/20 active:scale-[0.995] transition-all"
-              >
-                Verstuur aanvraag &amp; bekijk samenvatting
-              </button>
-            </div>
+            <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3.5 rounded-xl text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 transition-colors">
+              Aanvraag versturen
+            </button>
           </form>
-
-          <!-- Bevestigingssamenvatting na verzenden -->
-          <div id="order-confirmation" class="hidden mt-8 p-6 rounded-2xl bg-emerald-50/90 border border-emerald-200 text-slate-800" role="status" aria-live="polite">
-            <div class="flex items-start gap-3.5">
-              <div class="w-9 h-9 rounded-full bg-emerald-600 text-white flex items-center justify-center shrink-0 mt-0.5">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
-                </svg>
-              </div>
-              <div class="flex-1">
-                <h3 class="text-lg font-bold text-emerald-950">Aanvraag ontvangen — overzicht van je kaartje</h3>
-                <p class="text-sm text-emerald-900/80 mt-0.5">
-                  Bedankt voor je aanvraag. Hieronder staat de samenvatting van jouw gekozen instellingen:
-                </p>
-                <dl id="order-summary-list" class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm bg-white/80 rounded-xl p-4 border border-emerald-200/70">
-                  <!-- Dynamisch gevuld via JS -->
-                </dl>
-                <div class="mt-4 flex flex-wrap items-center justify-between gap-3">
-                  <span class="text-xs font-medium text-emerald-800">
-                    We nemen spoedig contact op via het opgegeven e-mailadres.
-                  </span>
-                  <button
-                    id="order-reset-btn"
-                    type="button"
-                    class="text-xs font-semibold text-indigo-700 hover:text-indigo-900 underline"
-                  >
-                    Nieuwe aanvraag invullen
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- 7. FAQ (UITKLAPBAAR) -->
+    <!-- 7. FAQ -->
     <section id="faq" class="py-16 sm:py-24 bg-white border-t border-slate-200/70">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <span class="text-xs font-bold uppercase tracking-wider text-indigo-600">Veelgestelde vragen</span>
-          <h2 class="mt-2 text-2xl sm:text-4xl font-extrabold tracking-tight text-slate-900">
-            Alles wat je wilt weten
-          </h2>
-          <p class="mt-2 text-base text-slate-600">
-            Duidelijke antwoorden over QR-codes, aanpassingen achteraf, vCard en eigen domeinnamen.
-          </p>
-        </div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-slate-900 mb-8">
+          Veelgestelde vragen
+        </h2>
 
-        <div class="space-y-3.5" id="faq-list">
-          <!-- Vraag 1 -->
-          <div class="accordion-item rounded-2xl border border-slate-200 bg-slate-50/60 overflow-hidden" data-open="true">
-            <button type="button" class="accordion-trigger w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-semibold text-slate-900 hover:bg-slate-100/60 transition-colors" aria-expanded="true">
+        <div class="space-y-3">
+          <div class="accordion-item rounded-2xl border border-slate-200 bg-slate-50/60 px-5 py-4" data-open="false">
+            <button type="button" class="w-full flex items-center justify-between text-left font-bold text-slate-900 text-sm sm:text-base">
               <span>Hoe werkt de QR-code en NFC-deeloptie op mijn digitale visitekaartje?</span>
-              <svg class="accordion-chevron w-5 h-5 text-slate-500 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <svg class="accordion-chevron w-4 h-4 text-slate-500 shrink-0 ml-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
             <div class="accordion-content">
               <div class="accordion-inner">
-                <div class="px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-200/60 pt-3">
-                  Elke pagina krijgt een unieke, snelle URL en een scherpe QR-code. Bezoekers richten de camera van hun smartphone op de QR-code of houden een NFC-kaartje/tag tegen hun telefoon en openen direct jouw micro-website—zonder dat ze een app hoeven te installeren.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Vraag 2 -->
-          <div class="accordion-item rounded-2xl border border-slate-200 bg-slate-50/60 overflow-hidden" data-open="false">
-            <button type="button" class="accordion-trigger w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-semibold text-slate-900 hover:bg-slate-100/60 transition-colors" aria-expanded="false">
-              <span>Kan ik mijn gegevens, links of diensten achteraf nog aanpassen?</span>
-              <svg class="accordion-chevron w-5 h-5 text-slate-500 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </button>
-            <div class="accordion-content">
-              <div class="accordion-inner">
-                <div class="px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-200/60 pt-3">
-                  Ja, juist dat is het grote voordeel van digitaal. Verandert je telefoonnummer, functie, portfolio of seizoensaanbod? Dan werk je jouw kaartje bij terwijl je bestaande QR-code en deellink gewoon blijven werken.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Vraag 3 -->
-          <div class="accordion-item rounded-2xl border border-slate-200 bg-slate-50/60 overflow-hidden" data-open="false">
-            <button type="button" class="accordion-trigger w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-semibold text-slate-900 hover:bg-slate-100/60 transition-colors" aria-expanded="false">
-              <span>Hoe werkt 'Opslaan als vCard' op iPhone en Android?</span>
-              <svg class="accordion-chevron w-5 h-5 text-slate-500 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </button>
-            <div class="accordion-content">
-              <div class="accordion-inner">
-                <div class="px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-200/60 pt-3">
-                  Met een vCard-bestand (.vcf) voegt een bezoeker jouw naam, functie, bedrijf, telefoonnummer, e-mailadres en website met één tik toe aan Apple Contacten of Google Contacten. Zo raak je nooit meer uit beeld.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Vraag 4 -->
-          <div class="accordion-item rounded-2xl border border-slate-200 bg-slate-50/60 overflow-hidden" data-open="false">
-            <button type="button" class="accordion-trigger w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-semibold text-slate-900 hover:bg-slate-100/60 transition-colors" aria-expanded="false">
-              <span>Kan ik een eigen domeinnaam (zoals mijnbedrijf.nl) koppelen?</span>
-              <svg class="accordion-chevron w-5 h-5 text-slate-500 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </button>
-            <div class="accordion-content">
-              <div class="accordion-inner">
-                <div class="px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-200/60 pt-3">
-                  Zeker. Met het Pro Micro-Website en Team / Bedrijf pakket kun je een eigen domeinnaam of subdomein koppelen. Heb je nog geen domeinnaam? Dan kun je die in het aanvraagformulier direct als wens invullen.
-                </div>
+                <p class="pt-3 text-sm text-slate-600 leading-relaxed">
+                  Bezoekers scannen de QR-code met hun camera of houden een NFC-kaartje tegen een geschikte smartphone en openen direct jouw pagina zonder app.
+                </p>
               </div>
             </div>
           </div>
@@ -913,489 +609,96 @@
     </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="bg-slate-900 text-slate-300 py-12">
+  <footer class="bg-slate-900 text-slate-300 py-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
-      <div class="flex items-center gap-2 font-bold text-white">
-        <span class="w-7 h-7 rounded-lg bg-indigo-600 text-white flex items-center justify-center text-xs">KO</span>
-        <span>KaartjeOnline</span>
-      </div>
-      <p class="text-slate-400 text-center sm:text-left">
-        Digitale visitekaartjes &amp; micro-websites voor ondernemers en teams in Nederland.
-      </p>
-      <div class="flex items-center gap-5">
-        <a href="#hoe-het-werkt" class="hover:text-white transition-colors">Hoe het werkt</a>
-        <a href="#prijzen" class="hover:text-white transition-colors">Prijzen</a>
-        <a href="#aanvragen" class="hover:text-white transition-colors">Aanvragen</a>
-      </div>
+      <p class="font-semibold text-white">KaartjeOnline</p>
+      <p class="text-slate-400">Digitale visitekaartjes &amp; micro-websites</p>
     </div>
   </footer>
 
-  <!-- JAVASCRIPT: ALLE INTERACTIEVE LOGICA -->
   <script>
-    (function () {
-      'use strict';
+    // Mobiel menu toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('menu-icon-open');
+    const iconClose = document.getElementById('menu-icon-close');
 
-      // -----------------------------------------------------------
-      // 1. MOBIEL NAVIGATIEMENU
-      // -----------------------------------------------------------
-      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const iconOpen = document.getElementById('menu-icon-open');
-      const iconClose = document.getElementById('menu-icon-close');
-      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.toggle('hidden');
+        mobileBtn.setAttribute('aria-expanded', String(!isHidden));
+        iconOpen?.classList.toggle('hidden', !isHidden);
+        iconClose?.classList.toggle('hidden', isHidden);
+      });
+    }
 
-      function setMobileMenuOpen(isOpen) {
-        if (!mobileMenu || !mobileMenuBtn) return;
-        mobileMenu.classList.toggle('hidden', !isOpen);
-        iconOpen?.classList.toggle('hidden', isOpen);
-        iconClose?.classList.toggle('hidden', !isOpen);
-        mobileMenuBtn.setAttribute('aria-expanded', String(isOpen));
+    // Live preview invoervelden
+    const naamInput = document.getElementById('hero-input-naam');
+    const functieInput = document.getElementById('hero-input-functie');
+    const bedrijfInput = document.getElementById('hero-input-bedrijf');
+    const cardNaam = document.getElementById('hero-card-naam');
+    const cardFunctie = document.getElementById('hero-card-functie');
+    const cardBedrijf = document.getElementById('hero-card-bedrijf');
+    const cardAvatar = document.getElementById('hero-card-avatar');
+    const cardBanner = document.getElementById('hero-card-banner');
+    const vcardBtn = document.getElementById('hero-vcard-btn');
+    const feedbackEl = document.getElementById('hero-preview-feedback');
+
+    function updatePreview() {
+      const naam = (naamInput?.value || 'Lotte van Dijk').trim() || 'Lotte van Dijk';
+      const functie = (functieInput?.value || 'UX & Brand Designer').trim() || 'UX & Brand Designer';
+      const bedrijf = (bedrijfInput?.value || 'Studio Noord').trim() || 'Studio Noord';
+
+      if (cardNaam) cardNaam.textContent = naam;
+      if (cardFunctie) cardFunctie.textContent = functie;
+      if (cardBedrijf) cardBedrijf.textContent = bedrijf;
+
+      if (cardAvatar) {
+        const parts = naam.split(/\s+/).filter(Boolean);
+        const initials = parts.length >= 2
+          ? (parts[0][0] + parts[parts.length - 1][0]).toUpperCase()
+          : naam.slice(0, 2).toUpperCase();
+        cardAvatar.textContent = initials || 'KO';
       }
+    }
 
-      mobileMenuBtn?.addEventListener('click', () => {
-        const currentlyOpen = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
-        setMobileMenuOpen(!currentlyOpen);
+    naamInput?.addEventListener('input', updatePreview);
+    functieInput?.addEventListener('input', updatePreview);
+    bedrijfInput?.addEventListener('input', updatePreview);
+
+    // Thema-kleuren
+    document.querySelectorAll('.hero-color-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const color = btn.getAttribute('data-theme-color') || '#4f46e5';
+        if (cardBanner) cardBanner.style.backgroundColor = color;
+        if (cardAvatar) cardAvatar.style.backgroundColor = color;
+        if (vcardBtn) vcardBtn.style.backgroundColor = color;
       });
+    });
 
-      mobileNavLinks.forEach((link) => {
-        link.addEventListener('click', () => setMobileMenuOpen(false));
+    // Snelle acties in de preview
+    document.querySelectorAll('.hero-quick-action').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const label = btn.getAttribute('data-action-label') || 'Actie uitgevoerd voor';
+        const naam = cardNaam?.textContent || 'Lotte van Dijk';
+        if (feedbackEl) feedbackEl.textContent = `${label} ${naam}.`;
       });
+    });
 
-      // -----------------------------------------------------------
-      // 2. HERO LIVE PREVIEW (NAAM, FUNCTIE, BEDRIJF, KLEUR & ACTIES)
-      // -----------------------------------------------------------
-      const heroNaamInput = document.getElementById('hero-input-naam');
-      const heroFunctieInput = document.getElementById('hero-input-functie');
-      const heroBedrijfInput = document.getElementById('hero-input-bedrijf');
+    vcardBtn?.addEventListener('click', () => {
+      const naam = cardNaam?.textContent || 'Lotte van Dijk';
+      if (feedbackEl) feedbackEl.textContent = `vCard voor ${naam} staat klaar om op te slaan.`;
+    });
 
-      const cardNaam = document.getElementById('hero-card-naam');
-      const cardFunctie = document.getElementById('hero-card-functie');
-      const cardBedrijf = document.getElementById('hero-card-bedrijf');
-      const cardAvatar = document.getElementById('hero-card-avatar');
-      const cardBanner = document.getElementById('hero-card-banner');
-      const cardVcardBtn = document.getElementById('hero-vcard-btn');
-      const colorBtns = document.querySelectorAll('.hero-color-btn');
-      const quickActionBtns = document.querySelectorAll('.hero-quick-action');
-      const previewFeedback = document.getElementById('hero-preview-feedback');
-
-      // Haalt nette initialen uit een naam
-      function getInitials(name) {
-        const cleaned = (name || '').trim();
-        if (!cleaned) return 'KO';
-        const parts = cleaned.split(/\s+/);
-        if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
-        return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
-      }
-
-      function updateHeroCardText() {
-        const naamVal = (heroNaamInput?.value || '').trim() || 'Lotte van Dijk';
-        const functieVal = (heroFunctieInput?.value || '').trim() || 'UX & Brand Designer';
-        const bedrijfVal = (heroBedrijfInput?.value || '').trim() || 'Studio Noord';
-
-        if (cardNaam) cardNaam.textContent = naamVal;
-        if (cardFunctie) cardFunctie.textContent = functieVal;
-        if (cardBedrijf) cardBedrijf.textContent = bedrijfVal;
-        if (cardAvatar) cardAvatar.textContent = getInitials(naamVal);
-      }
-
-      heroNaamInput?.addEventListener('input', updateHeroCardText);
-      heroFunctieInput?.addEventListener('input', updateHeroCardText);
-      heroBedrijfInput?.addEventListener('input', updateHeroCardText);
-
-      // Thema-kleur wisselen op de live preview kaart
-      colorBtns.forEach((btn) => {
-        btn.addEventListener('click', () => {
-          const hex = btn.getAttribute('data-theme-color') || '#4f46e5';
-          const colorName = btn.getAttribute('data-theme-name') || 'Gekozen kleur';
-
-          if (cardBanner) cardBanner.style.backgroundColor = hex;
-          if (cardAvatar) cardAvatar.style.backgroundColor = hex;
-          if (cardVcardBtn) cardVcardBtn.style.backgroundColor = hex;
-
-          // Actieve ring bijwerken
-          colorBtns.forEach((b) => b.classList.remove('ring-2', 'ring-indigo-600', 'ring-teal-600', 'ring-rose-600', 'ring-amber-600', 'ring-slate-900'));
-          btn.classList.add('ring-2');
-          if (hex === '#0d9488') btn.classList.add('ring-teal-600');
-          else if (hex === '#e11d48') btn.classList.add('ring-rose-600');
-          else if (hex === '#d97706') btn.classList.add('ring-amber-600');
-          else if (hex === '#0f172a') btn.classList.add('ring-slate-900');
-          else btn.classList.add('ring-indigo-600');
-
-          if (previewFeedback) {
-            previewFeedback.textContent = `Themakleur gewijzigd naar ${colorName}.`;
-          }
-        });
+    // FAQ accordeon
+    document.querySelectorAll('.accordion-item button').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.accordion-item');
+        if (!item) return;
+        const isOpen = item.getAttribute('data-open') === 'true';
+        item.setAttribute('data-open', String(!isOpen));
       });
-
-      // Interactieve feedback voor vCard & snelle contactknoppen
-      cardVcardBtn?.addEventListener('click', () => {
-        const currentNaam = cardNaam?.textContent || 'Lotte van Dijk';
-        if (previewFeedback) {
-          previewFeedback.textContent = `vCard voor "${currentNaam}" klaargezet om op te slaan in het adresboek.`;
-        }
-      });
-
-      quickActionBtns.forEach((btn) => {
-        btn.addEventListener('click', () => {
-          const actionPrefix = btn.getAttribute('data-action-label') || 'Actie gestart voor';
-          const currentNaam = cardNaam?.textContent || 'Lotte van Dijk';
-          if (previewFeedback) {
-            previewFeedback.textContent = `${actionPrefix} ${currentNaam}.`;
-          }
-        });
-      });
-
-      // -----------------------------------------------------------
-      // 3. INTERACTIEVE VOORBEELDEN / TEMPLATES
-      // -----------------------------------------------------------
-      const templatesData = {
-        freelancer: {
-          badge: 'Freelancer / Studio',
-          url: 'kaartjeonline.nl/sander-studio',
-          accentBg: 'bg-indigo-600',
-          accentSoft: 'bg-indigo-50 text-indigo-700',
-          avatar: 'SB',
-          naam: 'Sander Bakker',
-          rol: 'Onafhankelijk Web & Motion Designer',
-          locatie: 'Utrecht • Beschikbaar voor Q4/Q1',
-          bio: 'Ik help merken en startups met heldere digitale producten, interactieve prototypes en strakke micro-websites.',
-          links: [
-            { title: 'Bekijk geselecteerd portfolio', meta: '8 recente projecten • 2 min leestijd' },
-            { title: 'Plan een kennismaking van 20 min', meta: 'Direct in mijn agenda' },
-            { title: 'Download tarieven & werkwijze', meta: 'PDF / Overzichtspagina' }
-          ],
-          ctaText: 'Gebruik deze stijl voor mijn kaartje'
-        },
-        horeca: {
-          badge: 'Horeca / Salon',
-          url: 'kaartjeonline.nl/bistro-linden',
-          accentBg: 'bg-amber-600',
-          accentSoft: 'bg-amber-50 text-amber-800',
-          avatar: 'BL',
-          naam: 'Bistro & Bar De Linden',
-          rol: 'Seizoenskeuken, Naturwijn & Koffiebar',
-          locatie: 'Den Bosch • Wo–Zo geopend',
-          bio: 'Scan onze QR-code aan tafel of deel onze kaart direct met vrienden. Reserveer een plek, bekijk het menu of loop langs.',
-          links: [
-            { title: 'Bekijk lunch- & dinerkaart', meta: 'Inclusief vegetarische & vegan opties' },
-            { title: 'Reserveer direct een tafel', meta: 'Real-time beschikbaarheid' },
-            { title: 'Route & parkeertips in het centrum', meta: 'Google Maps / Apple Kaarten' }
-          ],
-          ctaText: 'Gebruik deze stijl voor horeca/salon'
-        },
-        makelaar: {
-          badge: 'Makelaar / Adviseur',
-          url: 'kaartjeonline.nl/anouk-wonen',
-          accentBg: 'bg-teal-600',
-          accentSoft: 'bg-teal-50 text-teal-800',
-          avatar: 'AK',
-          naam: 'Anouk de Vries-Koster',
-          rol: 'NVM Register Makelaar & Woonadviseur',
-          locatie: 'Ede & Veluwe • Persoonlijk advies',
-          bio: 'Heldere begeleiding bij verkoop en aankoop van woningen. Sla mijn gegevens direct op of vraag vrijblijvend een waardebepaling aan.',
-          links: [
-            { title: 'Vraag gratis waardebepaling aan', meta: 'Binnen 24 uur reactie' },
-            { title: 'Actueel woningaanbod bekijken', meta: 'Uitgelichte woningen in de regio' },
-            { title: 'Sla makelaar direct op in contacten', meta: 'vCard met kantoor- & mobielnummer' }
-          ],
-          ctaText: 'Gebruik deze stijl voor advies/makelaardij'
-        }
-      };
-
-      const templateTabs = document.querySelectorAll('.template-tab-btn');
-      const templateShowcase = document.getElementById('template-showcase');
-
-      function renderTemplate(key) {
-        const tpl = templatesData[key] || templatesData.freelancer;
-        if (!templateShowcase) return;
-
-        // Update actieve tab-styling
-        templateTabs.forEach((tab) => {
-          const isSelected = tab.getAttribute('data-template') === key;
-          tab.setAttribute('aria-selected', String(isSelected));
-          tab.className = isSelected
-            ? 'template-tab-btn text-left p-4 rounded-2xl border-2 border-indigo-600 bg-white shadow-sm transition-all'
-            : 'template-tab-btn text-left p-4 rounded-2xl border border-slate-200 bg-white hover:border-slate-300 transition-all';
-        });
-
-        const linksHtml = tpl.links
-          .map(
-            (item) => `
-            <div class="flex items-center justify-between p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-slate-300 transition-colors">
-              <div>
-                <p class="text-sm font-semibold text-slate-900">${item.title}</p>
-                <p class="text-xs text-slate-500 mt-0.5">${item.meta}</p>
-              </div>
-              <span class="text-slate-400 font-bold text-sm">&rarr;</span>
-            </div>`
-          )
-          .join('');
-
-        templateShowcase.innerHTML = `
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            <!-- Linkerkant: Uitleg & kenmerken van het template -->
-            <div class="lg:col-span-6 space-y-4">
-              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold ${tpl.accentSoft}">
-                ${tpl.badge}
-              </span>
-              <h3 class="text-2xl font-extrabold text-slate-900">${tpl.naam}</h3>
-              <p class="text-sm font-semibold text-slate-600">${tpl.rol}</p>
-              <p class="text-sm sm:text-base text-slate-600 leading-relaxed">${tpl.bio}</p>
-              <div class="pt-2">
-                <a
-                  href="#aanvragen"
-                  data-prefill-note="Gewenste stijl: ${tpl.badge} (${tpl.naam})"
-                  class="use-template-cta inline-flex items-center justify-center px-5 py-3 rounded-xl text-sm font-semibold text-white bg-slate-900 hover:bg-slate-800 transition-colors"
-                >
-                  ${tpl.ctaText}
-                </a>
-              </div>
-            </div>
-
-            <!-- Rechterkant: Klikbare Micro-Website Preview -->
-            <div class="lg:col-span-6">
-              <div class="bg-slate-100 rounded-2xl p-4 sm:p-6 border border-slate-200/80">
-                <div class="max-w-md mx-auto bg-white rounded-2xl border border-slate-200 shadow-card overflow-hidden">
-                  <div class="px-4 py-2.5 bg-slate-50 border-b border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                    <span class="truncate font-medium">${tpl.url}</span>
-                    <span class="font-semibold text-emerald-600 shrink-0 ml-2">Actief</span>
-                  </div>
-                  <div class="p-5">
-                    <div class="flex items-center gap-3.5 mb-4">
-                      <div class="w-12 h-12 rounded-xl ${tpl.accentBg} text-white font-bold flex items-center justify-center shrink-0">
-                        ${tpl.avatar}
-                      </div>
-                      <div>
-                        <p class="font-bold text-slate-900 text-base">${tpl.naam}</p>
-                        <p class="text-xs text-slate-500">${tpl.locatie}</p>
-                      </div>
-                    </div>
-
-                    <div class="space-y-2.5">
-                      ${linksHtml}
-                    </div>
-
-                    <div class="mt-4 pt-3.5 border-t border-slate-100 flex items-center justify-between text-xs">
-                      <span class="text-slate-500">WhatsApp • Bellen • E-mail</span>
-                      <span class="font-bold text-indigo-600">+ Contact opslaan</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        `;
-
-        // Koppel CTA binnen voorbeeld aan formulier-opmerking
-        const useBtn = templateShowcase.querySelector('.use-template-cta');
-        useBtn?.addEventListener('click', () => {
-          const noteField = document.getElementById('order-opmerking');
-          const prefill = useBtn.getAttribute('data-prefill-note') || '';
-          if (noteField && !noteField.value.includes(prefill)) {
-            noteField.value = noteField.value ? `${noteField.value}\n${prefill}` : prefill;
-          }
-        });
-      }
-
-      templateTabs.forEach((tab) => {
-        tab.addEventListener('click', () => {
-          const key = tab.getAttribute('data-template') || 'freelancer';
-          renderTemplate(key);
-        });
-      });
-
-      // Initialiseer standaard voorbeeld
-      renderTemplate('freelancer');
-
-      // -----------------------------------------------------------
-      // 4. PRIJZEN: MAANDELIJKS / JAARLIJKS & PAKKETSELECTIE
-      // -----------------------------------------------------------
-      const monthlyBtn = document.getElementById('billing-monthly-btn');
-      const yearlyBtn = document.getElementById('billing-yearly-btn');
-
-      const priceBasis = document.getElementById('price-basis');
-      const pricePro = document.getElementById('price-pro');
-      const priceTeam = document.getElementById('price-team');
-
-      const periodBasis = document.getElementById('period-basis');
-      const periodPro = document.getElementById('period-pro');
-      const periodTeam = document.getElementById('period-team');
-
-      const subtextBasis = document.getElementById('subtext-basis');
-      const subtextPro = document.getElementById('subtext-pro');
-      const subtextTeam = document.getElementById('subtext-team');
-
-      let currentBillingCycle = 'monthly';
-
-      function setBillingCycle(cycle) {
-        currentBillingCycle = cycle;
-        const isYearly = cycle === 'yearly';
-
-        if (monthlyBtn && yearlyBtn) {
-          monthlyBtn.className = !isYearly
-            ? 'px-4 py-2 rounded-xl text-sm font-semibold bg-white text-slate-900 shadow-sm transition-all'
-            : 'px-4 py-2 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 transition-all';
-
-          yearlyBtn.className = isYearly
-            ? 'px-4 py-2 rounded-xl text-sm font-semibold bg-white text-slate-900 shadow-sm transition-all flex items-center gap-2'
-            : 'px-4 py-2 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 transition-all flex items-center gap-2';
-        }
-
-        // 20% korting bij jaarlijkse weergave
-        if (priceBasis) priceBasis.innerHTML = isYearly ? '&euro;7' : '&euro;9';
-        if (pricePro) pricePro.innerHTML = isYearly ? '&euro;15' : '&euro;19';
-        if (priceTeam) priceTeam.innerHTML = isYearly ? '&euro;39' : '&euro;49';
-
-        const periodText = isYearly ? '/ maand (jaar)' : '/ maand';
-        if (periodBasis) periodBasis.textContent = periodText;
-        if (periodPro) periodPro.textContent = periodText;
-        if (periodTeam) periodTeam.textContent = periodText;
-
-        if (subtextBasis) subtextBasis.textContent = isYearly ? 'Jaarlijkse weergave • 20% voordeel' : 'Maandelijks opzegbaar';
-        if (subtextPro) subtextPro.textContent = isYearly ? 'Jaarlijkse weergave • 20% voordeel' : 'Maandelijks opzegbaar';
-        if (subtextTeam) subtextTeam.textContent = isYearly ? 'Jaarlijkse weergave • 20% voordeel' : 'Maandelijks opzegbaar';
-      }
-
-      monthlyBtn?.addEventListener('click', () => setBillingCycle('monthly'));
-      yearlyBtn?.addEventListener('click', () => setBillingCycle('yearly'));
-
-      // Pakketknoppen vullen selectievak in en scrollen naar het formulier
-      const selectPackageBtns = document.querySelectorAll('.select-package-btn');
-      const orderPakketSelect = document.getElementById('order-pakket');
-
-      selectPackageBtns.forEach((btn) => {
-        btn.addEventListener('click', () => {
-          const pkg = btn.getAttribute('data-select-package');
-          if (pkg && orderPakketSelect) {
-            orderPakketSelect.value = pkg;
-          }
-          document.getElementById('aanvragen')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
-      });
-
-      // -----------------------------------------------------------
-      // 5. INTERACTIEF BESTEL- / AANVRAAGFORMULIER MET VALIDATIE
-      // -----------------------------------------------------------
-      const orderForm = document.getElementById('order-form');
-      const orderConfirmation = document.getElementById('order-confirmation');
-      const orderSummaryList = document.getElementById('order-summary-list');
-      const orderResetBtn = document.getElementById('order-reset-btn');
-
-      const naamInput = document.getElementById('order-naam');
-      const emailInput = document.getElementById('order-email');
-      const domeinInput = document.getElementById('order-domein');
-      const opmerkingInput = document.getElementById('order-opmerking');
-
-      const errorNaam = document.getElementById('error-naam');
-      const errorEmail = document.getElementById('error-email');
-      const errorDomein = document.getElementById('error-domein');
-
-      function isValidEmail(email) {
-        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-      }
-
-      function toggleFieldError(inputEl, errorEl, showError) {
-        if (!inputEl || !errorEl) return;
-        errorEl.classList.toggle('hidden', !showError);
-        inputEl.classList.toggle('border-rose-500', showError);
-        inputEl.classList.toggle('border-slate-300', !showError);
-      }
-
-      orderForm?.addEventListener('submit', (event) => {
-        event.preventDefault();
-
-        const naamVal = (naamInput?.value || '').trim();
-        const emailVal = (emailInput?.value || '').trim();
-        const pakketVal = orderPakketSelect?.value || 'Pro Micro-Website';
-        const domeinVal = (domeinInput?.value || '').trim();
-        const opmerkingVal = (opmerkingInput?.value || '').trim();
-
-        const selectedFeatures = Array.from(
-          orderForm.querySelectorAll('input[name="functies"]:checked')
-        ).map((cb) => cb.value);
-
-        const naamInvalid = naamVal.length < 2;
-        const emailInvalid = !isValidEmail(emailVal);
-        const domeinInvalid = domeinVal.length < 3;
-
-        toggleFieldError(naamInput, errorNaam, naamInvalid);
-        toggleFieldError(emailInput, errorEmail, emailInvalid);
-        toggleFieldError(domeinInput, errorDomein, domeinInvalid);
-
-        if (naamInvalid || emailInvalid || domeinInvalid) {
-          const firstInvalid = naamInvalid ? naamInput : emailInvalid ? emailInput : domeinInput;
-          firstInvalid?.focus();
-          return;
-        }
-
-        const billingLabel = currentBillingCycle === 'yearly' ? 'Jaarlijks (-20%)' : 'Maandelijks';
-        const featuresText = selectedFeatures.length > 0 ? selectedFeatures.join(', ') : 'Standaard contactknoppen';
-
-        if (orderSummaryList) {
-          orderSummaryList.innerHTML = `
-            <div>
-              <dt class="text-xs font-semibold uppercase tracking-wide text-slate-400">Naam</dt>
-              <dd class="font-semibold text-slate-900 mt-0.5">${naamVal}</dd>
-            </div>
-            <div>
-              <dt class="text-xs font-semibold uppercase tracking-wide text-slate-400">E-mailadres</dt>
-              <dd class="font-semibold text-slate-900 mt-0.5">${emailVal}</dd>
-            </div>
-            <div>
-              <dt class="text-xs font-semibold uppercase tracking-wide text-slate-400">Pakket &amp; Facturatie</dt>
-              <dd class="font-semibold text-slate-900 mt-0.5">${pakketVal} (${billingLabel})</dd>
-            </div>
-            <div>
-              <dt class="text-xs font-semibold uppercase tracking-wide text-slate-400">Gewenste link / domein</dt>
-              <dd class="font-semibold text-slate-900 mt-0.5">${domeinVal}</dd>
-            </div>
-            <div class="sm:col-span-2">
-              <dt class="text-xs font-semibold uppercase tracking-wide text-slate-400">Geselecteerde functies</dt>
-              <dd class="font-medium text-slate-800 mt-0.5">${featuresText}</dd>
-            </div>
-            ${
-              opmerkingVal
-                ? `<div class="sm:col-span-2">
-                     <dt class="text-xs font-semibold uppercase tracking-wide text-slate-400">Toelichting</dt>
-                     <dd class="font-medium text-slate-800 mt-0.5">${opmerkingVal}</dd>
-                   </div>`
-                : ''
-            }
-          `;
-        }
-
-        orderConfirmation?.classList.remove('hidden');
-        orderConfirmation?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      });
-
-      orderResetBtn?.addEventListener('click', () => {
-        orderForm?.reset();
-        if (orderPakketSelect) orderPakketSelect.value = 'Pro Micro-Website';
-        toggleFieldError(naamInput, errorNaam, false);
-        toggleFieldError(emailInput, errorEmail, false);
-        toggleFieldError(domeinInput, errorDomein, false);
-        orderConfirmation?.classList.add('hidden');
-      });
-
-      // -----------------------------------------------------------
-      // 6. UITKLAPBARE FAQ-ACCORDEON
-      // -----------------------------------------------------------
-      const accordionTriggers = document.querySelectorAll('.accordion-trigger');
-
-      accordionTriggers.forEach((trigger) => {
-        trigger.addEventListener('click', () => {
-          const item = trigger.closest('.accordion-item');
-          if (!item) return;
-
-          const isCurrentlyOpen = item.getAttribute('data-open') === 'true';
-          const nextState = !isCurrentlyOpen;
-
-          item.setAttribute('data-open', String(nextState));
-          trigger.setAttribute('aria-expanded', String(nextState));
-        });
-      });
-    })();
+    });
   </script>
 </body>
 </html>
